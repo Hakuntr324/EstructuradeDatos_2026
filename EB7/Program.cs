@@ -22,7 +22,7 @@ namespace EB7
             Console.ResetColor();
             
             Console.Write("Introduce un número entero positivo para calcular su sumatoria: ");
-            string entrada = Console.ReadLine();
+            string entrada = Console.ReadLine() ?? string.Empty;
 
             if (Validador.ValidarEntrada(entrada, out int numeroValido))
             {
